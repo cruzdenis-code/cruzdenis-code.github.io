@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>engineering – Denis Cruz</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js">
+</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./engineering.html" aria-current="page"> 
+<span class="menu-text">Research Engineering</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./outside-lab.html"> 
+<span class="menu-text">Outside the Lab</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#solutions-for-experimental-research" id="toc-solutions-for-experimental-research" class="nav-link active" data-scroll-target="#solutions-for-experimental-research">Solutions for experimental research</a></li>
+  <li><a href="#reusable-light-shields-for-plant-symbiosis-assays" id="toc-reusable-light-shields-for-plant-symbiosis-assays" class="nav-link" data-scroll-target="#reusable-light-shields-for-plant-symbiosis-assays">Reusable light shields for plant symbiosis assays</a>
+  <ul class="collapse">
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The problem</a></li>
+  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The solution</a></li>
+  </ul></li>
+  <li><a href="#reusable-petri-dish-division-template" id="toc-reusable-petri-dish-division-template" class="nav-link" data-scroll-target="#reusable-petri-dish-division-template">Reusable Petri dish division template</a>
+  <ul class="collapse">
+  <li><a href="#the-problem-1" id="toc-the-problem-1" class="nav-link" data-scroll-target="#the-problem-1">The problem</a></li>
+  <li><a href="#the-solution-1" id="toc-the-solution-1" class="nav-link" data-scroll-target="#the-solution-1">The solution</a></li>
+  </ul></li>
+  <li><a href="#spectrophotometer-component-redesign" id="toc-spectrophotometer-component-redesign" class="nav-link" data-scroll-target="#spectrophotometer-component-redesign">Spectrophotometer component redesign</a>
+  <ul class="collapse">
+  <li><a href="#the-problem-2" id="toc-the-problem-2" class="nav-link" data-scroll-target="#the-problem-2">The problem</a></li>
+  <li><a href="#the-design-process" id="toc-the-design-process" class="nav-link" data-scroll-target="#the-design-process">The design process</a></li>
+  </ul></li>
+  <li><a href="#improving-chlorophyll-sample-preparation" id="toc-improving-chlorophyll-sample-preparation" class="nav-link" data-scroll-target="#improving-chlorophyll-sample-preparation">Improving chlorophyll sample preparation</a>
+  <ul class="collapse">
+  <li><a href="#the-problem-3" id="toc-the-problem-3" class="nav-link" data-scroll-target="#the-problem-3">The problem</a></li>
+  <li><a href="#current-development" id="toc-current-development" class="nav-link" data-scroll-target="#current-development">Current development</a></li>
+  <li><a href="#research-goal" id="toc-research-goal" class="nav-link" data-scroll-target="#research-goal">Research goal</a></li>
+  </ul></li>
+  <li><a href="#building-an-in-house-plant-resource" id="toc-building-an-in-house-plant-resource" class="nav-link" data-scroll-target="#building-an-in-house-plant-resource">Building an in house plant resource</a>
+  <ul class="collapse">
+  <li><a href="#the-problem-4" id="toc-the-problem-4" class="nav-link" data-scroll-target="#the-problem-4">The problem</a>
+  <ul class="collapse">
+  <li><a href="#the-problem-aging-seed-stocks" id="toc-the-problem-aging-seed-stocks" class="nav-link" data-scroll-target="#the-problem-aging-seed-stocks">The problem: aging seed stocks</a></li>
+  </ul></li>
+  <li><a href="#the-approach" id="toc-the-approach" class="nav-link" data-scroll-target="#the-approach">The approach</a></li>
+  <li><a href="#research-benefit" id="toc-research-benefit" class="nav-link" data-scroll-target="#research-benefit">Research benefit</a></li>
+  </ul></li>
+  <li><a href="#a-common-approach" id="toc-a-common-approach" class="nav-link" data-scroll-target="#a-common-approach">A common approach</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">engineering</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<hr>
+<section id="solutions-for-experimental-research" class="level1">
+<h1>Solutions for experimental research</h1>
+<p>When I think something can be changed or improved, I make it my mission to redesign or build tools and protocols that can make our lab workflow more efficient and standard, for repeatable outcomes.</p>
+<blockquote class="blockquote">
+<p><strong>Can this be redesigned?</strong></p>
+</blockquote>
+<p>Here I want to share some of mine and my labs favorite designs.</p>
+<hr>
+</section>
+<section id="reusable-light-shields-for-plant-symbiosis-assays" class="level1">
+<h1>Reusable light shields for plant symbiosis assays</h1>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
+<p>Plant symbiosis experiments are a big part of our research. <em>Medicago–Sinorhizobium</em> symbiosis experiments require plants to grow in transparent tubes while the developing root system stays protected from light.</p>
+<p>For years our lab used aluminum foil molds. I found this difficult to use because it required repeated preparation and caution not to rip or fold the fragile paper. This also produced waste and allowed for variability in how completely each root zone was covered.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/foil.png" class="engineering-image img-fluid figure-img"></p>
+<figcaption><strong>Before:</strong> Plant-growth tubes individually wrapped with aluminum foil.</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution">The solution</h2>
+<p>I designed reusable opaque sleeves that fit around our plant-growth tubes and provide consistent light protection that can be quickly removed and replaced during experimental observations.</p>
+<div class="model-container">
+
+<model-viewer src="models/11mm_sleeve_graphite.glb" alt="Interactive 3D model of the reusable plant growth tube sleeve" camera-controls="" touch-action="pan-y" camera-orbit="35deg 65deg 180%" min-camera-orbit="auto 0deg 5%" max-camera-orbit="auto 180deg 1000%" min-field-of-view="1deg" max-field-of-view="100deg" orbit-sensitivity="1.2" zoom-sensitivity="1.5" pan-sensitivity="1.4" auto-rotate="" auto-rotate-delay="4000" rotation-per-second="12deg" shadow-intensity="1" exposure="1" interaction-prompt="auto">
+
+</model-viewer>
+
+<p class="model-caption">
+<strong>Interactive 3D model.</strong>
+Left-drag to rotate · Right-drag to pan · Scroll to zoom
+</p>
+
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/sleeve.png" class="engineering-image img-fluid figure-img"></p>
+<figcaption><strong>After:</strong> Reusable 3D-printed sleeves implemented in the plant-growth system.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="reusable-petri-dish-division-template" class="level1">
+<h1>Reusable Petri dish division template</h1>
+<section id="the-problem-1" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-1">The problem</h2>
+<p>Some microbiological procedures require Petri dishes to be divided into equal regions. Drawing these divisions manually can introduce small differences in positioning and requires repeated careful measurement for every plate.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/old6way.png" class="engineering-image img-fluid figure-img"></p>
+<figcaption>Before: Manual plate division using repeated measurements and hand-drawn guides. Not consistent and slow and a problem when consistency is important in experimental workflows, such as CFU count verification.</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-solution-1" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution-1">The solution</h2>
+<p>I designed reusable 3D-printed templates that align with the Petri dish and guide equal plate division.</p>
+<p>This design includes reference features for multiple plate layouts, allowing the same tool to be used for different experimental configurations.</p>
+<div class="model-container">
+<model-viewer src="models/6way_petri_template_graphite.glb" alt="Interactive 3D model of the 6-way Petri dish division template" camera-controls="" touch-action="pan-y" camera-orbit="30deg 35deg 170%" min-camera-orbit="auto 5deg 10%" max-camera-orbit="auto 175deg 1000%" min-field-of-view="1deg" max-field-of-view="100deg" auto-rotate="" auto-rotate-delay="4000" rotation-per-second="10deg" shadow-intensity="1" exposure="1" interaction-prompt="auto">
+<p></p>
+<p class="model-caption">
+</p><p><strong>Interactive 3D model -3 and 6- way template.</strong> Drag to rotate · Right-drag to pan · Scroll to zoom</p>
+<p></p>
+</model-viewer></div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/6way.png" class="engineering-image img-fluid figure-img"></p>
+<figcaption><strong>The template:</strong> Reusable 3D-printed template for consistently dividing Petri dishes.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/streak.png" class="engineering-image img-fluid figure-img"></p>
+<figcaption><strong>In use:</strong> Six-section plate layout used to organize and streak multiple bacterial strains.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="model-container">
+<model-viewer src="models/8way_petri_template_graphite.glb" alt="Interactive 3D model of the 8-way Petri dish division template" camera-controls="" touch-action="pan-y" camera-orbit="30deg 35deg 170%" min-camera-orbit="auto 5deg 10%" max-camera-orbit="auto 175deg 1000%" min-field-of-view="1deg" max-field-of-view="100deg" auto-rotate="" auto-rotate-delay="4000" rotation-per-second="10deg" shadow-intensity="1" exposure="1" interaction-prompt="auto">
+<p></p>
+<p class="model-caption">
+</p><p><strong>Interactive 3D model - 4 and 8 -way template.</strong> Drag to rotate · Right-drag to pan · Scroll to zoom</p>
+<p></p>
+</model-viewer></div>
+</section>
+</section>
+<section id="spectrophotometer-component-redesign" class="level1">
+<h1>Spectrophotometer component redesign</h1>
+<section id="the-problem-2" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-2">The problem</h2>
+<p>A structural component of a Thermo Scientific GENESYS spectrophotometer sample-compartment lid failed near the hinge assembly.</p>
+<p>Rather than replacing the entire assembly, I reversed engineered, redesigned and fabricated the damaged component in house.</p>
+<div class="image-carousel" id="old-lid-carousel">
+
+<div class="carousel-viewport">
+<div class="carousel-track">
+
+<div class="carousel-slide">
+<img src="images/old_lid1.png" alt="Original GENESYS 140 hinge-base component, view 1">
+</div>
+
+<div class="carousel-slide">
+<img src="images/old_lid2.png" alt="Original GENESYS 140 hinge-base component, view 2">
+</div>
+
+<div class="carousel-slide">
+<img src="images/old_lid3.png" alt="Original GENESYS 140 hinge-base component, view 3">
+</div>
+
+<div class="carousel-slide">
+<img src="images/old_lid4.png" alt="Original GENESYS 140 hinge-base component, view 4">
+</div>
+
+</div>
+</div>
+
+<button class="carousel-arrow carousel-prev" aria-label="Previous image">‹</button>
+<button class="carousel-arrow carousel-next" aria-label="Next image">›</button>
+
+<div class="carousel-dots">
+<button class="carousel-dot active" aria-label="Image 1"></button>
+<button class="carousel-dot" aria-label="Image 2"></button>
+<button class="carousel-dot" aria-label="Image 3"></button>
+<button class="carousel-dot" aria-label="Image 4"></button>
+</div>
+
+<p class="engineering-carousel-caption">
+<strong>Original component.</strong> Multiple views of the damaged hinge base component I used to reverse engineer the replacement.Primary failure seen in the hinge attachment design. Redesigned in the new component.
+</p>
+
+</div>
+
+<script>
+(() => {
+  const carousel = document.querySelector("#old-lid-carousel");
+  if (!carousel) return;
+
+  const track = carousel.querySelector(".carousel-track");
+  const slides = carousel.querySelectorAll(".carousel-slide");
+  const dots = carousel.querySelectorAll(".carousel-dot");
+  const prev = carousel.querySelector(".carousel-prev");
+  const next = carousel.querySelector(".carousel-next");
+
+  let current = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${current * 100}%)`;
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === current);
+    });
+  }
+
+  prev.addEventListener("click", () => {
+    current = (current - 1 + slides.length) % slides.length;
+    updateCarousel();
+  });
+
+  next.addEventListener("click", () => {
+    current = (current + 1) % slides.length;
+    updateCarousel();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      current = index;
+      updateCarousel();
+    });
+  });
+
+  updateCarousel();
+})();
+</script>
+</section>
+<section id="the-design-process" class="level2">
+<h2 class="anchored" data-anchor-id="the-design-process">The design process</h2>
+<p>I measured the original, reconstructed the component in CAD, and modified the design to accommodate the existing hinge and new hardware.</p>
+<p>The redesign included changes to the walls, fastener placement and type, hinge alignment, and reinforcement around mechanically stressed regions.</p>
+<div class="model-container">
+<model-viewer src="models/GENESYS140_hinge_base_graphite.glb" alt="Interactive 3D model of the redesigned GENESYS 140 hinge-base component" camera-controls="" touch-action="pan-y" camera-orbit="35deg 70deg 180%" min-camera-orbit="auto 5deg 10%" max-camera-orbit="auto 175deg 1000%" min-field-of-view="1deg" max-field-of-view="100deg" auto-rotate="" auto-rotate-delay="4000" rotation-per-second="10deg" shadow-intensity="1" exposure="1" interaction-prompt="auto">
+<p></p>
+<p class="model-caption">
+</p><p><strong>Interactive 3D model.</strong> Redesigned hinge-base component developed from measurements of the original part. Drag to rotate · Right-drag to pan · Scroll to zoom.</p>
+<p></p>
+</model-viewer></div>
+<div class="image-carousel" id="working-lid-carousel">
+
+<div class="carousel-viewport">
+<div class="carousel-track">
+
+<div class="carousel-slide">
+<img src="images/new_lid1.png" alt="Fabricated replacement GENESYS 140 hinge-base component, view 1">
+</div>
+
+<div class="carousel-slide">
+<img src="images/new_lid2.png" alt="Fabricated replacement GENESYS 140 hinge-base component, view 2">
+</div>
+
+<div class="carousel-slide">
+<img src="images/new_lid3.png" alt="Fabricated replacement GENESYS 140 hinge-base component, view 3">
+</div>
+
+<div class="carousel-slide">
+<img src="images/working_lid1.png" alt="Replacement hinge-base component installed in the GENESYS 140 instrument, view 1">
+</div>
+
+<div class="carousel-slide">
+<img src="images/working_lid2.png" alt="Replacement hinge-base component installed in the GENESYS 140 instrument, view 2">
+</div>
+
+<div class="carousel-slide">
+<video controls="" playsinline="" preload="metadata">
+  <source src="images/working_lidvid.mp4" type="video/mp4">
+  Your browser does not support embedded video.
+</video>
+</div>
+
+</div>
+</div>
+
+<button class="carousel-arrow carousel-prev" aria-label="Previous image">‹</button>
+<button class="carousel-arrow carousel-next" aria-label="Next image">›</button>
+
+<div class="carousel-dots">
+<button class="carousel-dot active" aria-label="Image 1"></button>
+<button class="carousel-dot" aria-label="Image 2"></button>
+<button class="carousel-dot" aria-label="Image 3"></button>
+<button class="carousel-dot" aria-label="Image 4"></button>
+<button class="carousel-dot" aria-label="Image 5"></button>
+<button class="carousel-dot" aria-label="Video 6"></button>
+</div>
+
+<p class="engineering-carousel-caption">
+<strong>Fabrication and implementation.</strong> images of the completed replacement component, its installation in our GENESYS 140 machine, and a video showing its functionality. For our lab working even better than before. 
+</p>
+
+</div>
+
+<script>
+(() => {
+  const carousel = document.querySelector("#working-lid-carousel");
+  if (!carousel) return;
+
+  const track = carousel.querySelector(".carousel-track");
+  const slides = carousel.querySelectorAll(".carousel-slide");
+  const dots = carousel.querySelectorAll(".carousel-dot");
+  const prev = carousel.querySelector(".carousel-prev");
+  const next = carousel.querySelector(".carousel-next");
+  const videos = carousel.querySelectorAll("video");
+
+  let current = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${current * 100}%)`;
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === current);
+    });
+
+    videos.forEach(video => video.pause());
+  }
+
+  prev.addEventListener("click", () => {
+    current = (current - 1 + slides.length) % slides.length;
+    updateCarousel();
+  });
+
+  next.addEventListener("click", () => {
+    current = (current + 1) % slides.length;
+    updateCarousel();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      current = index;
+      updateCarousel();
+    });
+  });
+
+  updateCarousel();
+})();
+</script>
+<p><strong>This project demonstrates how reverse engineering and prototyping can extend the life of laboratory equipment when an existing design can be improved.</strong></p>
+<hr>
+</section>
+</section>
+<section id="improving-chlorophyll-sample-preparation" class="level1">
+<h1>Improving chlorophyll sample preparation</h1>
+<section id="the-problem-3" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-3">The problem</h2>
+<p>My symbiosis experiments require chlorophyll extraction from plant tissue as an endpoint measurement of plant performance.</p>
+<p>Manual tissue disruption can be repetitive and may introduce variability in extraction efficiency between samples, particularly when processing larger experiments.</p>
+</section>
+<section id="current-development" class="level2">
+<h2 class="anchored" data-anchor-id="current-development">Current development</h2>
+<p>I am developing a bead-based tissue disruption device intended to improve the speed and consistency of chlorophyll sample preparation.</p>
+<p>The project is currently focused on designing a system that can process samples reproducibly while integrating with the existing extraction workflow.</p>
+<p><strong>images coming soon</strong></p>
+</section>
+<section id="research-goal" class="level2">
+<h2 class="anchored" data-anchor-id="research-goal">Research goal</h2>
+<p>Rather than changing the biological assay itself, the objective is to improve the <strong>sample processing step</strong> that precedes measurement.</p>
+<blockquote class="blockquote">
+<p><strong>Design goal:</strong> Increase throughput and standardize tissue disruption during chlorophyll extraction.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="building-an-in-house-plant-resource" class="level1">
+<h1>Building an in house plant resource</h1>
+<p>Engineering a research workflow does not always require building a physical device.</p>
+<section id="the-problem-4" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-4">The problem</h2>
+<section id="the-problem-aging-seed-stocks" class="level3">
+<h3 class="anchored" data-anchor-id="the-problem-aging-seed-stocks">The problem: aging seed stocks</h3>
+<p>Our existing <em>Medicago truncatula</em> seed lab-line stocks are more than 20 years old, cannot be bought and average about <strong>2% germination</strong>. This creates a major bottleneck when preparing plants for symbiosis experiments.</p>
+<p>Seeds aren’t just placed into incubation. Before germination, they undergo a multi-step sterilization and washing procedure that takes approximately <strong>5–6 hours</strong>, followed by incubation and screening for contamination before seedlings can be used experimentally.</p>
+<p>At a 2% germination rate, processing <strong>1,500 seeds may yield only about 30 seedlings</strong>. Obtaining enough plants for a single symbiosis experiment can therefore require processing several thousand seeds, sometimes the equivalent of six or more 1,500 seed batches.</p>
+<p>When germination is insufficient, additional batches must be prepared. This not only increases labor and material use, but can also result in seedlings germinating on different days, making it more difficult to establish a synchronized experimental cohort.These are from a special lab strain seed stock and cannot be bought.<br>
+<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/old_seed_germination.png" class="engineering-image img-fluid figure-img"></p>
+<figcaption><strong>Low germination of aged seed stock.</strong> Representative germination of <em>Medicago truncatula</em> seeds from a seed stock more than 20 years old.<br>
+<br>
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What 2% germination means
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>1,500 seeds processed → ~30 germinated seedlings</strong></p>
+<p>To obtain roughly 150–180 seedlings, thousands of seeds may need to be sterilized, washed, incubated, and screened for contamination.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="the-approach" class="level2">
+<h2 class="anchored" data-anchor-id="the-approach">The approach</h2>
+<p>I developed an in-house seed-bulking workflow for <em>M. truncatula</em> and other experimental legumes. This has never been done in our lab and required me to learn about greenhouse plant production from the ground up. I had to learn about unfamiliar things such as substrate types, waterings, nutrition, light, and plant support. Our current plants are as healthy as they can be</p>
+<p>This reflects an important part of how I approach research: when I encounter a problem outside my previous experience, I am willing to learn the system and refine the process until it works.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/before_plants.png" class="engineering-pair-image img-fluid figure-img"></p>
+<figcaption><strong>Early growth:</strong> Initial plants during the first stages of developing the greenhouse seed-bulking workflow.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/after_plants.png" class="engineering-pair-image img-fluid figure-img"></p>
+<figcaption><strong>Current :</strong> Large and robust plants following my greenhouse protocol for growing conditions and management.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="research-benefit" class="level2">
+<h2 class="anchored" data-anchor-id="research-benefit">Research benefit</h2>
+<p>Developing an internal seed supply preserves access to our specialized <em>Medicago truncatula</em> Jemalong A17 line, which is not commercially available and provides a reliable source of experimental hosts for future symbiosis studies.</p>
+<hr>
+</section>
+</section>
+<section id="a-common-approach" class="level1">
+<h1>A common approach</h1>
+<p>Although these projects address very different problems, I approach them using the same general process:</p>
+<p><strong>Identify a limitation → understand the constraints → design a solution → prototype → test → refine → implement</strong></p>
+<p>This approach comes directly from my experience working across engineering, fabrication, entrepreneurship, and biological research.</p>
+<p>For me, research engineering is not separate from doing science. It is another way of asking how an experimental system can be better understood.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

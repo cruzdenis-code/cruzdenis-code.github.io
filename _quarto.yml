@@ -1,21 +1,27 @@
 project:
   type: website
+  resources:
+    - "models/**"
+    - "images/**"
 
 website:
-  title: "deniscruz.github.io"
+  title: "Denis Cruz"
+
   navbar:
+    title: false
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: research.qmd
+        text: Research
+      - href: engineering.qmd
+        text: Research Engineering
+      - href: outside-lab.qmd
+        text: Outside the Lab
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
     toc: true
-
-editor: visual
-
+    include-in-header: model-viewer.html
