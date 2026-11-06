@@ -1,1 +1,391 @@
-/* css styles */
+/* ---------- Overall ---------- */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #252a30;
+}
+
+main {
+  max-width: 100%;
+}
+
+.navbar {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr;
+  gap: 4rem;
+  align-items: center;
+
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 6rem 2rem 5rem 2rem;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 0.7rem;
+}
+
+.hero-text h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #5d6873;
+  margin-bottom: 2rem;
+}
+
+.hero-text p {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  max-width: 760px;
+}
+
+.hero-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 290px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ---------- Buttons ---------- */
+
+.site-button {
+  display: inline-block;
+  margin-top: 1.25rem;
+  margin-right: 0.75rem;
+  padding: 0.75rem 1.2rem;
+
+  border-radius: 6px;
+  background: #253b55;
+  color: white !important;
+
+  font-weight: 600;
+  text-decoration: none !important;
+
+  transition: all 0.2s ease;
+}
+
+.site-button:hover {
+  transform: translateY(-2px);
+  background: #17283c;
+}
+
+.site-button-secondary {
+  background: white;
+  color: #253b55 !important;
+  border: 1px solid #253b55;
+}
+
+.site-button-secondary:hover {
+  background: #f4f6f8;
+}
+
+
+/* ---------- Homepage Sections ---------- */
+
+.home-section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem;
+}
+
+.home-section > h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.home-section > p {
+  max-width: 850px;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+
+/* ---------- Cards ---------- */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.home-card {
+  border: 1px solid #e4e7ea;
+  border-radius: 10px;
+  padding: 1.8rem;
+
+  background: white;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.home-card h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.home-card p {
+  line-height: 1.65;
+}
+
+.home-card a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* ---------- Bottom ---------- */
+
+.home-bottom {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 850px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 3rem;
+    gap: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-photo {
+    justify-content: flex-start;
+  }
+
+  .profile-photo {
+    width: 230px;
+    height: 285px;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}/* css styles */
+
+/* ---------- Interactive 3D model viewer ---------- */
+
+.model-container {
+  max-width: 650px;
+  margin: 2rem auto;
+  padding: 0.9rem;
+  border: 1px solid #e4e7ea;
+  border-radius: 12px;
+  background: #fafafa;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.model-container model-viewer {
+  display: block;
+  width: 100%;
+  height: 380px;
+  border-radius: 8px;
+  background: #f5f6f7;
+}
+
+.model-caption {
+  margin: 0.75rem 0 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #687078;
+}
+
+@media (max-width: 700px) {
+  .model-container {
+    max-width: 100%;
+    margin: 1.5rem auto;
+    padding: 0.75rem;
+  }
+
+  .model-container model-viewer {
+    height: 300px;
+  }
+}
+
+/* ---------- Engineering project images ---------- */
+
+.engineering-image {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+
+  margin: 2rem auto;
+
+  border-radius: 10px;
+}
+
+/* ---------- Engineering image carousel ---------- */
+
+.image-carousel {
+  position: relative;
+  max-width: 650px;
+  margin: 2rem auto;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f5f6f7;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+}
+
+.carousel-slide img,
+.carousel-slide video {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  background: #f5f6f7;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+.carousel-arrow:hover {
+  background: white;
+}
+
+.carousel-prev {
+  left: 12px;
+}
+
+.carousel-next {
+  right: 12px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #b9bec4;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background: #3f4850;
+}
+
+.engineering-carousel-caption {
+  display: block;
+  position: static;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4a5056;
+}
+
+@media (max-width: 700px) {
+  .carousel-slide img,
+  .carousel-slide video {
+  height: 320px;
+}
+}
+
+/* ---------- Outside the Lab branding ---------- */
+
+.outside-brand-corners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 0.5rem auto 1.5rem auto;
+  padding: 0 0.75rem;
+}
+
+.wardi-stamp {
+  display: block;
+  width: 150px;
+  height: auto;
+  opacity: 0.85;
+}
+
+.skunk-stamp {
+  display: block;
+  width: 220px;
+  height: auto;
+  opacity: 0.85;
+}
+
+.wardi-stamp:hover,
+.skunk-stamp:hover {
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+
+  .wardi-stamp {
+    width: 105px;
+  }
+
+  .skunk-stamp {
+    width: 140px;
+  }
+
+}
