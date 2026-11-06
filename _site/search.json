@@ -1,10 +1,24 @@
 [
   {
+    "objectID": "outside-lab.html",
+    "href": "outside-lab.html",
+    "title": "Outside the Lab",
+    "section": "",
+    "text": "Outside the Lab\nWay before I entered a research laboratory, I was already learning by building.\nI began working on machines and engine projects during high school, initially out of curiosity and necessity. Over time, those ideas became increasingly ambitious, and in 2020, at age 20, that work developed into a business, initially logistics, and now solely focused on diesel systems, fabrication, and custom tow truck builds.\nAlthough I enjoyed building a business and working with mechanical systems, I chose to continue pursuing science not only because I love it but also because I believe I have a lot to bring to science. Whether I am developing a piece of lab equipment, troubleshooting an experiment, or turning an idea for a truck into a functioning mechanism, I approach problems the same way, understand how the system works, identify what can be improved, and keep working until the idea becomes something real\nThese projects are a reminder of what I bring to research beyond my technical training, I take ownership of difficult problems, and do my best to carry ANY idea from concept through implementation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n‹\n›\n\n\n\n\n\n\n\n\n\n\nSelected builds. A few of photos showing the type of work my company does. These are frame to bed bed tow truck builds."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "research.html#in-vivo-testing-symbiotic-performance",
+    "href": "research.html#in-vivo-testing-symbiotic-performance",
+    "title": "In the Lab",
+    "section": "In vivo: testing symbiotic performance",
+    "text": "In vivo: testing symbiotic performance\nI evaluate selected strains using longitudinal plant symbiosis experiments in Medicago truncatula.\nPlants are followed for approximately six weeks while I monitor the development of root nodules and changes in nodule phenotype over time.\nPink nodules provide a visible indicator associated with an effective symbiotic state, while white nodules can indicate nodules that have not fully developed or maintained that state.\nAt the end of the experiment, I measure leaf chlorophyll as an additional indicator of plant performance.\n\n\n\nComparison of a nodule photographed at week 4 and week 6 post inoculation"
   },
   {
     "objectID": "index.html",
@@ -21,20 +35,6 @@
     "text": "I am an M.S. researcher at San Francisco State University studying how bacterial genetics shapes interactions between microbes and their hosts.\nMy current research uses the Sinorhizobium meliloti–Medicago symbiosis as a model to investigate how bacterial pathways involved in surface behavior, cellular regulation, and RNA organization influence host colonization and the maintenance of effective symbiosis.\nAlongside my biological research, I draw on experience in engineering, fabrication, data analysis, and entrepreneurship. In my lab I constantly seek to develop practical tools and approaches that improve how our research is performed.\nExplore My Research View My CV"
   },
   {
-    "objectID": "index.html#research-at-the-intersection-of-biology-engineering-and-problem-solving",
-    "href": "index.html#research-at-the-intersection-of-biology-engineering-and-problem-solving",
-    "title": "Denis Cruz",
-    "section": "Research at the intersection of biology, engineering, and problem solving",
-    "text": "Research at the intersection of biology, engineering, and problem solving\nI like to say all my work in or out the lab is driven by a simple question: how can understanding a system, biological or otherwise, lead to better experiments, better tools, and eventually better technologies?\n\n\n🧬 Research\nInvestigating genetic determinants of Sinorhizobium meliloti symbiotic performance in Medicago hosts, with particular interest in bacterial surface-associated behavior, regulatory pathways, and RNase E-dependent RNA organization.\nExplore Research →\n\n\n⚙️ Research Engineering\nI like design and prototype tools that address practical limitations in our experimental workflows. including custom 3D-printed laboratory components, plant-growth tools, and devices for improving sample preparation and reproducibility.\nSee Research Engineering →\n\n\n🔧 Outside the Lab\nMy background in diesel systems, fabrication, and entrepreneurship shaped the way I approach scientific problems. I am interested in bringing that same problem-solving mindset into biotechnology and bioengineering.\nOutside the Lab →"
-  },
-  {
-    "objectID": "index.html#current-focus",
-    "href": "index.html#current-focus",
-    "title": "Denis Cruz - in the Chen Lab)",
-    "section": "Current Focus",
-    "text": "Current Focus\nM.S. Thesis: Genetic Determinants of Sinorhizobium meliloti Symbiotic Performance in Medicago Hosts\nChen Laboratory · Department of Biology\nSan Francisco State University"
-  },
-  {
     "objectID": "index.html#approach-at-research-and-problem-solving",
     "href": "index.html#approach-at-research-and-problem-solving",
     "title": "Denis Cruz - in the Chen Lab)",
@@ -42,18 +42,11 @@
     "text": "Approach at research and problem solving\nAll my work in and out the lab is driven my determination to understand the systems I work with, biological or not. Hard problems push us to generate better experiments, better tools, and eventually better technologies.\n\n\n🧬 Research\nInvestigating genetic determinants of Sinorhizobium meliloti symbiotic performance in Medicago hosts, with particular interest in bacterial surface-associated behavior, regulatory pathways, and RNase E-dependent RNA organization.\nExplore Research →\n\n\n⚙️ Research Engineering\nI enjoy designing and prototyping tools that address practical limitations in our experimental workflows. From custom 3D-printed lab components and devices for improving sample preparation and standardization to developing an in house seed-bulking workflow.\nSee Research Engineering →\n\n\n🔧 Outside the Lab\nMy background in diesel systems, fabrication, and entrepreneurship shaped the way I approach scientific problems. I am interested in bringing that same problem-solving mindset into biotechnology and bioengineering.\nOutside the Lab →"
   },
   {
-    "objectID": "research.html#in-vitro-defining-bacterial-phenotypes",
-    "href": "research.html#in-vitro-defining-bacterial-phenotypes",
-    "title": "In the Lab",
-    "section": "In vitro: defining bacterial phenotypes",
-    "text": "In vitro: defining bacterial phenotypes\nMany of the strains I study were originally identified because mutations altered measurable bacterial behaviors under laboratory conditions.\nThese phenotypes can be investigated using approaches such as crystal-violet biofilm assays, motility assays, microscopy, and attachment measurements.\nTogether, these experiments help establish what a mutation does to the bacterium before introducing the added complexity of a living host."
-  },
-  {
-    "objectID": "research.html#in-vivo-testing-symbiotic-performance",
-    "href": "research.html#in-vivo-testing-symbiotic-performance",
-    "title": "In the Lab",
-    "section": "In vivo: testing symbiotic performance",
-    "text": "In vivo: testing symbiotic performance\nI evaluate selected strains using longitudinal plant symbiosis experiments in Medicago truncatula.\nPlants are followed for approximately six weeks while I monitor the development of root nodules and changes in nodule phenotype over time.\nPink nodules provide a visible indicator associated with an effective symbiotic state, while white nodules can indicate nodules that have not fully developed or maintained that state.\nAt the end of the experiment, I measure leaf chlorophyll as an additional indicator of plant performance.\n\n\n\nComparison of a nodule photographed at week 4 and week 6 post inoculation"
+    "objectID": "index.html#current-focus",
+    "href": "index.html#current-focus",
+    "title": "Denis Cruz - in the Chen Lab)",
+    "section": "Current Focus",
+    "text": "Current Focus\nM.S. Thesis: Genetic Determinants of Sinorhizobium meliloti Symbiotic Performance in Medicago Hosts\nChen Laboratory · Department of Biology\nSan Francisco State University"
   },
   {
     "objectID": "engineering.html#the-problem",
@@ -138,12 +131,5 @@
     "title": "engineering",
     "section": "Research benefit",
     "text": "Research benefit\nDeveloping an internal seed supply preserves access to our specialized Medicago truncatula Jemalong A17 line, which is not commercially available and provides a reliable source of experimental hosts for future symbiosis studies."
-  },
-  {
-    "objectID": "outside-lab.html",
-    "href": "outside-lab.html",
-    "title": "Outside the Lab",
-    "section": "",
-    "text": "Outside the Lab\nWay before I entered a research laboratory, I was already learning by building.\nI began working on machines and engine projects during high school, initially out of curiosity and necessity. Over time, those ideas became increasingly ambitious, and in 2020, at age 20, that work developed into a business, initially logistics, and now solely focused on diesel systems, fabrication, and custom tow truck builds.\nAlthough I enjoyed building a business and working with mechanical systems, I chose to continue pursuing science not only because I love it but also because I believe I have a lot to bring to science. Whether I am developing a piece of lab equipment, troubleshooting an experiment, or turning an idea for a truck into a functioning mechanism, I approach problems the same way, understand how the system works, identify what can be improved, and keep working until the idea becomes something real\nThese projects are a reminder of what I bring to research beyond my technical training, I take ownership of difficult problems, and do my best to carry ANY idea from concept through implementation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n‹\n›\n\n\n\n\n\n\n\n\n\n\nSelected builds. A few of photos showing the type of work my company does. These are frame to bed bed tow truck builds."
   }
 ]

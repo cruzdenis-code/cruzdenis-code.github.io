@@ -6,6 +6,7 @@ project:
 
 website:
   title: "Denis Cruz"
+  site-url: "https://cruzdenis-code.github.io"
 
   navbar:
     title: false
